@@ -25,12 +25,31 @@ _client: QdrantClient | None = None
 _query_lock = Lock()
 
 
+
 def _get_client() -> QdrantClient:
     global _client
+
     if _client is None:
-        url = os.getenv("QDRANT_URL", "http://localhost:6333")
-        api_key = os.getenv("QDRANT_API_KEY")
-        _client = QdrantClient(url=url, api_key=api_key or None)
+        url = os.getenv("QDRANT_URL", "").strip().strip("\"'")
+        api_key = os.getenv("QDRANT_API_KEY", "").strip().strip("\"'")
+
+        if not url:
+            raise ValueError("QDRANT_URL is missing from environment variables.")
+
+        if "\r" in url or "\n" in url:
+            raise ValueError("QDRANT_URL contains invalid newline characters.")
+
+        if "\r" in api_key or "\n" in api_key:
+            raise ValueError(
+                "QDRANT_API_KEY contains newline characters. "
+                "Update it in Render Environment settings."
+            )
+
+        _client = QdrantClient(
+            url=url,
+            api_key=api_key or None,
+        )
+
     return _client
 
 
