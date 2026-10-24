@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import os
 import uuid
@@ -41,7 +42,7 @@ def _chat_provider_configured() -> bool:
 
 @app.on_event("startup")
 async def ingest_knowledge_base_if_empty() -> None:
-    ensure_knowledge_base_ingested()
+    await asyncio.to_thread(ensure_knowledge_base_ingested)
 
 
 class ChatRequest(BaseModel):

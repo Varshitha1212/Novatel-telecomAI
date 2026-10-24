@@ -34,6 +34,17 @@ uvicorn app.main:app --reload
 
 Open [http://localhost:8000](http://localhost:8000). Text chat does not require LiveKit credentials, but it does require an OpenAI or Groq API key for the LangChain agent.
 
+## Free-tier deployment
+
+The root `render.yaml` configures a Render **Free** web service for the website and chat API. This free instance can sleep after inactivity, so its first request after sleeping may take about a minute. Its filesystem is temporary; the service is configured to use external Qdrant storage instead of local vector files.
+
+1. Create a free Qdrant Cloud cluster and copy its HTTPS URL and API key. Keep the cluster within its published free-tier limits.
+2. In Render, create a Blueprint from this repository and select `render.yaml`. Set the prompted `GROQ_API_KEY`, `QDRANT_URL`, `QDRANT_API_KEY`, and LiveKit credentials as Render environment variables. Do not put secret values in this repository. Wait for the `/api/health` check and initial FAQ indexing to complete.
+3. Create a LiveKit Cloud project and install the LiveKit CLI. From this repository, authenticate with `lk cloud auth`, select the project with `lk project set-default "<project-name>"`, and deploy the voice worker with `lk agent create --secrets-file .env`. Before running that command, make sure your local, git-ignored `.env` contains the same `GROQ_API_KEY`, `QDRANT_URL`, `QDRANT_API_KEY`, and `QDRANT_COLLECTION` as the Render service. LiveKit Cloud supplies its own `LIVEKIT_URL`, `LIVEKIT_API_KEY`, and `LIVEKIT_API_SECRET` to the worker. The CLI creates `livekit.toml` and a Dockerfile as part of agent deployment.
+4. Confirm the agent is healthy with `lk agent status`, then test chat and a voice call using the Render URL.
+
+This keeps the hosting configuration on free tiers, subject to each provider's current quotas and availability. Render free services sleep when idle, and LiveKit Cloud's free plan may cold-start the agent. Free allowances are limited: LiveKit currently includes a monthly agent-minute allowance and inference credits, Qdrant limits free cluster resources, and Groq applies model-specific usage limits. Calls or model usage beyond free allowances may stop working or incur charges depending on provider settings. Check each provider's billing and usage dashboard; free hosting does not guarantee unlimited free AI usage or uninterrupted, production-grade service.
+
 ## DarkVeil background
 
 The static frontend includes a WebGL2 DarkVeil background adapted from the supplied React Bits component source, so it does not require a React build or React Bits license key. Browsers without WebGL2 use the animated CSS background instead. The effect is decorative, ignores pointer input, and respects the browser's reduced-motion setting.
