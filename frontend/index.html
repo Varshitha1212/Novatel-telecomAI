@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f8" />
+    <meta
+      name="description"
+      content="Get quick answers about billing, plans, data, and network support."
+    />
+    <title>Telecom Support — Help, made simple</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="dark-veil-background" class="dark-veil-container" aria-hidden="true">
+      <canvas class="dark-veil-canvas"></canvas>
+    </div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/" aria-label="NovaTel home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M4 18.5h5l3-9 6 15 3.5-9H28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>NovaTel<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="sidebar-section">
+          <p class="section-label">SUPPORT</p>
+          <button class="nav-item active" type="button">
+            <span class="nav-icon">✳</span>
+            <span>Ask Nova</span>
+            <span class="nav-pill">NEW</span>
+          </button>
+          <button class="nav-item" type="button" data-question="How can I check network coverage in my area?">
+            <span class="nav-icon">⌁</span>
+            <span>Network coverage</span>
+          </button>
+          <button class="nav-item" type="button" data-question="How do I recharge my prepaid number?">
+            <span class="nav-icon">↗</span>
+            <span>Recharge &amp; plans</span>
+          </button>
+          <button class="nav-item" type="button" data-question="How can I pay my monthly bill?">
+            <span class="nav-icon">▤</span>
+            <span>Billing &amp; payments</span>
+          </button>
+        </div>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-card-icon">✦</span>
+            <p class="help-card-title">Need a real person?</p>
+            <p class="help-card-copy">Our support team is here to help you out.</p>
+            <a id="support-contact" href="#">Contact support <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="profile">
+            <div class="profile-avatar">G</div>
+            <div class="profile-info"><strong>Guest account</strong><span>Telecom support</span></div>
+            <span class="profile-menu">···</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Support</span><span class="crumb-slash">/</span><strong>Ask Nova</strong></div>
+          <div class="topbar-right">
+            <span class="secure-label"><span class="secure-dot"></span> Secure support</span>
+            <button class="icon-button" type="button" aria-label="Help">?</button>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="chat-column">
+            <div class="welcome">
+              <div class="welcome-symbol">✳</div>
+              <p class="eyebrow">YOUR PERSONAL SUPPORT ASSISTANT</p>
+              <h1>How can we help<br />you today?</h1>
+              <p class="welcome-copy">Ask anything about your NovaTel service. I’m here to make it simple.</p>
+            </div>
+
+            <div class="suggestions" aria-label="Suggested questions">
+              <button class="suggestion" type="button" data-question="How can I check my mobile data usage?"><span>◉</span> Check my data usage <b>↗</b></button>
+              <button class="suggestion" type="button" data-question="My service was suspended for non-payment. How can I restore it?"><span>▧</span> Restore my service <b>↗</b></button>
+              <button class="suggestion" type="button" data-question="What should I do if my mobile internet is slow?"><span>⌁</span> Fix a network issue <b>↗</b></button>
+            </div>
+
+            <div class="conversation" id="conversation" aria-live="polite" aria-label="Conversation">
+              <div class="message assistant-message">
+                <div class="message-avatar">✳</div>
+                <div class="message-content">
+                  <div class="message-meta"><strong>Nova assistant</strong><span>Just now</span></div>
+                  <div class="message-bubble">Hi there! 👋 I can help with billing, prepaid recharges, data usage, and network questions. What would you like to know?</div>
+                </div>
+              </div>
+            </div>
+
+            <form class="composer" id="chat-form">
+              <label class="visually-hidden" for="question">Ask a question</label>
+              <input id="question" name="question" placeholder="Type your question here..." autocomplete="off" maxlength="500" required />
+              <button class="voice-button dictation-button" id="dictation-button" type="button" title="Dictate a message" aria-label="Dictate a message">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></svg>
+              </button>
+              <button class="voice-button call-button" id="voice-button" type="button" title="Start a live voice call" aria-label="Start a live voice call">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-6-6l3-2-2-5Z"/></svg>
+              </button>
+              <button class="send-button" id="send-button" type="submit" aria-label="Send question">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </form>
+            <div class="dictation-indicator" id="dictation-indicator" role="status" aria-live="assertive" hidden>
+              <span class="listening-dot" aria-hidden="true"></span>
+              <span id="dictation-indicator-text">I’m listening — speak now</span>
+            </div>
+            <div class="composer-footer"><span id="voice-status">Mic to dictate · phone for a live call · speaker to hear replies.</span><span><i></i> AI can make mistakes. Check important details.</span></div>
+            <audio id="remote-audio" autoplay></audio>
+          </div>
+
+          <aside class="right-rail">
+            <div class="rail-heading"><span>✦</span><h2>Popular topics</h2></div>
+            <button class="topic-card" type="button" data-question="How can I pay my monthly bill?"><span class="topic-icon purple">▤</span><span><strong>Bill payments</strong><small>Ways to pay your bill</small></span><b>↗</b></button>
+            <button class="topic-card" type="button" data-question="How do I recharge my prepaid number?"><span class="topic-icon orange">↗</span><span><strong>Prepaid recharge</strong><small>Top up your number</small></span><b>↗</b></button>
+            <button class="topic-card" type="button" data-question="How can I check network coverage in my area?"><span class="topic-icon blue">⌁</span><span><strong>Network &amp; coverage</strong><small>Get connected again</small></span><b>↗</b></button>
+
+            <div class="rail-divider"></div>
+            <div class="knowledge-card">
+              <div class="knowledge-top"><span class="knowledge-icon">▤</span><span class="knowledge-status"><i></i> CONNECTED</span></div>
+              <h3>Support knowledge base</h3>
+              <p>Answers are grounded in telecom support FAQs for billing, plans, data, and network help.</p>
+              <div class="knowledge-foot"><span>8 support topics</span><span>Updated today</span></div>
+            </div>
+            <div class="privacy-note"><span>♧</span><p>Your privacy matters. Never share your password or one-time verification code in chat.</p></div>
+          </aside>
+        </section>
+      </main>
+    </div>
+    <section class="call-overlay" id="call-overlay" role="dialog" aria-modal="true" aria-labelledby="call-title" aria-hidden="true" hidden>
+      <div class="call-card">
+        <div class="call-connection"><i></i><span>SECURE LIVE CALL</span></div>
+        <div class="call-avatar" id="call-avatar" aria-hidden="true"><span class="call-ball-fallback">✳</span></div>
+        <h2 id="call-title">Nova support</h2>
+        <p class="call-status" id="call-status" aria-live="assertive">Connecting to voice support…</p>
+        <div class="call-waveform" id="call-waveform" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="call-hint" id="call-hint">Speak naturally. Nova will listen and respond.</p>
+        <button class="end-call-button" id="end-call-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-6-6l3-2-2-5Z"/></svg>
+          End call
+        </button>
+      </div>
+    </section>
+    <script type="module" src="/dark-veil.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

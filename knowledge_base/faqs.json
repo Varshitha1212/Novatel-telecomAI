@@ -1,0 +1,373 @@
+[
+  {
+    "id": "bill-payment",
+    "category": "Billing",
+    "question": "How can I pay my monthly bill?",
+    "answer": "You can pay your bill in your provider's mobile app or website, or through an authorized payment channel listed on your bill. Keep the payment confirmation for your records.",
+    "keywords": "pay payment bill monthly online app website"
+  },
+  {
+    "id": "suspended-service",
+    "category": "Billing",
+    "question": "My service was suspended for non-payment. How can I restore it?",
+    "answer": "Pay the outstanding balance through an official provider payment channel. If your service does not return after payment, contact support with your payment confirmation so they can check the account.",
+    "keywords": "suspended nonpayment restore reconnect balance overdue"
+  },
+  {
+    "id": "prepaid-recharge",
+    "category": "Prepaid",
+    "question": "How do I recharge my prepaid number?",
+    "answer": "Use your provider's app or website, a supported payment app, or an authorized retail location. Confirm the phone number before completing the recharge.",
+    "keywords": "prepaid recharge top up add balance phone number"
+  },
+  {
+    "id": "demo-data-plans",
+    "category": "Plans",
+    "question": "What data plans and costs does NovaTel offer?",
+    "answer": "Demo-only sample plans for this project (not real carrier offers and not available to purchase): Demo Saver includes 1 GB total for 7 days at ₹99; Demo Daily 1.5 includes 1.5 GB per day for 28 days at ₹299; Demo Daily 2 includes 2 GB per day for 28 days at ₹399. These illustrative prices and allowances must not be treated as actual NovaTel or carrier pricing.",
+    "keywords": "demo sample example illustrative prepaid data plan plans cost price price inr rupees allowance gigabytes gb daily validity 7 days 28 days"
+  },
+  {
+    "id": "demo-saver-plan",
+    "category": "Plans",
+    "question": "What is included in the demo Saver data plan and how much does it cost?",
+    "answer": "Demo-only sample: Demo Saver includes 1 GB total for 7 days at ₹99. This is an illustrative plan for the project, not a real carrier offer and not available to purchase.",
+    "keywords": "demo sample saver data plan cost price ₹99 99 rupees 1 gb 7 days validity"
+  },
+  {
+    "id": "demo-daily-15-plan",
+    "category": "Plans",
+    "question": "What is included in the demo Daily 1.5 data plan and how much does it cost?",
+    "answer": "Demo-only sample: Demo Daily 1.5 includes 1.5 GB per day for 28 days at ₹299. This is an illustrative plan for the project, not a real carrier offer and not available to purchase.",
+    "keywords": "demo sample daily 1.5 data plan cost price ₹299 299 rupees 1.5 gb per day 28 days validity"
+  },
+  {
+    "id": "demo-daily-2-plan",
+    "category": "Plans",
+    "question": "What is included in the demo Daily 2 data plan and how much does it cost?",
+    "answer": "Demo-only sample: Demo Daily 2 includes 2 GB per day for 28 days at ₹399. This is an illustrative plan for the project, not a real carrier offer and not available to purchase.",
+    "keywords": "demo sample daily 2 data plan cost price ₹399 399 rupees 2 gb per day 28 days validity"
+  },
+  {
+    "id": "plan-expiry",
+    "category": "Prepaid",
+    "question": "What happens when my prepaid plan expires?",
+    "answer": "Available services and renewal rules depend on your plan. Check the plan details in your provider's app or contact support to confirm what applies to your number.",
+    "keywords": "prepaid plan expire validity renewal incoming outgoing"
+  },
+  {
+    "id": "data-usage",
+    "category": "Data",
+    "question": "How can I check my mobile data usage?",
+    "answer": "Check current data usage in your provider's mobile app or account website. Your phone's built-in data counter can also help, though it may not match the provider's billing period exactly.",
+    "keywords": "mobile data usage remaining balance internet allowance"
+  },
+  {
+    "id": "coverage",
+    "category": "Network",
+    "question": "How can I check network coverage in my area?",
+    "answer": "Use the coverage map on your provider's website and search for your area. Coverage can vary indoors and with local conditions, so the map is an estimate rather than a guarantee.",
+    "keywords": "network coverage signal area map reception"
+  },
+  {
+    "id": "slow-internet",
+    "category": "Network",
+    "question": "What should I do if my mobile internet is slow?",
+    "answer": "Check that mobile data is enabled and that you have data remaining, then toggle airplane mode or restart your phone. If the issue continues, check for a local outage or contact support.",
+    "keywords": "slow internet mobile data connection troubleshooting outage"
+  },
+  {
+    "id": "sim-replacement",
+    "category": "Account",
+    "question": "How can I replace a lost or damaged SIM?",
+    "answer": "Contact your provider through an official support channel or visit an authorized store to request a replacement SIM. They may ask you to verify account ownership; never share a one-time password with anyone.",
+    "keywords": "lost damaged replace replacement sim card"
+  },
+  {
+    "id": "bill-due-date",
+    "category": "Billing",
+    "question": "Where can I find my bill due date?",
+    "answer": "Your due date should appear on the latest bill and in your provider's official app or account website. If a payment is already pending, check the payment status before paying again.",
+    "keywords": "billing due date when payment deadline latest bill invoice"
+  },
+  {
+    "id": "understand-bill",
+    "category": "Billing",
+    "question": "How can I understand the charges on my phone bill?",
+    "answer": "Review the bill's plan or rental charge, usage charges, add-ons, taxes, adjustments, and any previous balance. Compare the dates and usage with your account history. If an item is unfamiliar, ask your provider to explain that specific line before paying a disputed amount.",
+    "keywords": "billing charge explain itemized invoice rental plan usage tax adjustment previous balance"
+  },
+  {
+    "id": "unexpected-bill",
+    "category": "Billing",
+    "question": "Why is my mobile bill higher than usual?",
+    "answer": "A higher bill can result from usage outside plan allowances, add-ons, roaming, a plan change, one-time charges, taxes, or an unpaid previous balance. Check the itemized bill and usage dates in the official app. The exact reason depends on your account; contact billing support if a charge is unclear.",
+    "keywords": "unexpected bill high amount increase extra charges roaming overage add on"
+  },
+  {
+    "id": "payment-pending",
+    "category": "Billing",
+    "question": "My bill payment is pending. Should I pay again?",
+    "answer": "Check the payment status in your provider's official app and the payment method you used before trying again. Save the transaction reference. Paying again while the first transaction is pending could create a duplicate payment; contact your provider if the status does not update.",
+    "keywords": "bill payment pending processing duplicate pay again transaction reference"
+  },
+  {
+    "id": "payment-deducted-not-credited",
+    "category": "Billing",
+    "question": "Money was deducted but my bill still shows unpaid. What should I do?",
+    "answer": "Keep the payment receipt or transaction reference, check the provider app and payment method for the latest status, and avoid making another payment until you confirm whether the first one completed. Contact your provider's billing support with the reference if the bill remains unpaid.",
+    "keywords": "money deducted payment successful bill unpaid receipt transaction failed"
+  },
+  {
+    "id": "duplicate-bill-payment",
+    "category": "Billing",
+    "question": "I paid my phone bill twice. How do I get help?",
+    "answer": "Save both transaction references and check the account's payment history in the official app. Contact billing support to confirm whether both payments settled and ask how any extra payment is handled. Refund or credit timing depends on the provider and payment method.",
+    "keywords": "duplicate double bill payment refund extra credit two transactions"
+  },
+  {
+    "id": "failed-bill-payment",
+    "category": "Billing",
+    "question": "What should I do if my bill payment failed?",
+    "answer": "Check whether the payment method shows a completed, pending, or failed transaction and confirm your bill is still due in the provider app. If money was taken, keep the transaction reference and contact support before retrying. If no money was taken, use an official payment channel and verify the account details.",
+    "keywords": "bill payment failed declined error retry bank debit transaction"
+  },
+  {
+    "id": "payment-receipt",
+    "category": "Billing",
+    "question": "Where can I find a receipt for a bill payment?",
+    "answer": "Look in the provider app's payment history, your payment service's transaction history, or the confirmation message or email from the payment. Save the transaction reference until the bill account shows the payment.",
+    "keywords": "bill receipt payment confirmation invoice transaction history proof"
+  },
+  {
+    "id": "billing-cycle",
+    "category": "Billing",
+    "question": "What is a billing cycle?",
+    "answer": "A billing cycle is the period covered by a particular bill. Its start and end dates are shown on the invoice or in the provider app. Usage near a cycle boundary may appear on a different bill depending on when it was recorded.",
+    "keywords": "billing cycle monthly period start end dates bill invoice"
+  },
+  {
+    "id": "bill-usage-period",
+    "category": "Billing",
+    "question": "Why does my bill show usage from different dates?",
+    "answer": "A bill covers a stated billing period, while some usage or adjustments may be recorded after the event or displayed on a later statement. Compare the dates and details shown on the bill with the provider app. Ask billing support to explain any item that appears outside the stated period.",
+    "keywords": "bill different dates usage billing period delayed charges statement"
+  },
+  {
+    "id": "automatic-bill-payment",
+    "category": "Billing",
+    "question": "How can I manage automatic bill payments?",
+    "answer": "Use your provider's official app or website, or the payment service where you set up the instruction, to check, change, or cancel automatic payments. Confirm the next payment date and the account or payment method before making changes.",
+    "keywords": "autopay auto pay automatic recurring bill payment manage cancel mandate"
+  },
+  {
+    "id": "change-billing-plan",
+    "category": "Billing",
+    "question": "I changed my plan. Why does my bill look different?",
+    "answer": "A plan change can affect the charges or allowances shown on a bill, and the effective date and billing treatment depend on your provider's terms. Check the change confirmation and bill details in the official app, or ask billing support to explain the specific adjustment.",
+    "keywords": "plan change bill different prorated charge adjustment effective date"
+  },
+  {
+    "id": "billing-contact-details",
+    "category": "Billing",
+    "question": "How can I update the email or address used for billing?",
+    "answer": "Update billing contact details through the provider's official app, account website, or support channel. You may need to verify account ownership. Do not share passwords or one-time verification codes with anyone claiming to help.",
+    "keywords": "update billing email address contact invoice account details"
+  },
+  {
+    "id": "bill-dispute",
+    "category": "Billing",
+    "question": "How do I dispute an incorrect bill charge?",
+    "answer": "Identify the line item and dates you believe are incorrect, gather relevant usage details and payment records, and contact your provider through its official billing support channel. Keep the case or complaint reference and ask what happens to any disputed amount while it is reviewed.",
+    "keywords": "dispute wrong incorrect bill charge complaint investigation billing support"
+  },
+  {
+    "id": "bill-copy",
+    "category": "Billing",
+    "question": "How can I download an old bill or invoice?",
+    "answer": "Check the bills, statements, or account history section of your provider's official app or website. If an older bill is not listed, contact support and ask whether a copy can be provided.",
+    "keywords": "download previous old bill invoice statement copy billing history"
+  },
+  {
+    "id": "payment-security",
+    "category": "Billing",
+    "question": "Is it safe to pay my phone bill through a link in a message?",
+    "answer": "To reduce the risk of fraud, open your provider's official app or type its known website address yourself instead of trusting an unexpected payment link. Check the account and amount before confirming. Never share a password, card PIN, or one-time verification code with someone who contacts you.",
+    "keywords": "secure safe payment link scam fraud phishing sms bill pay"
+  },
+  {
+    "id": "prepaid-recharge-failed",
+    "category": "Prepaid",
+    "question": "My prepaid recharge failed. What should I do?",
+    "answer": "Check the transaction status in the provider app and payment service, confirm the number you entered, and save the transaction reference. If money was deducted, avoid repeating the recharge until the first transaction is resolved and contact the provider or payment service through official support.",
+    "keywords": "prepaid recharge failed declined money deducted transaction status reference"
+  },
+  {
+    "id": "prepaid-recharge-delayed",
+    "category": "Prepaid",
+    "question": "I recharged my prepaid number but the benefits have not appeared.",
+    "answer": "Check the recharge history and confirmation for the number, plan, and transaction status. If the recharge is marked successful but the benefits are missing, keep the receipt or transaction reference and contact your provider's prepaid support. Activation times depend on the provider and plan.",
+    "keywords": "recharge successful benefits not credited delayed activation prepaid"
+  },
+  {
+    "id": "wrong-number-recharge",
+    "category": "Prepaid",
+    "question": "I recharged the wrong mobile number. Can it be reversed?",
+    "answer": "Contact the provider and the payment service you used as soon as possible, with the transaction reference and incorrect number. Whether a recharge can be reversed depends on the provider and transaction status; do not assume it can be refunded.",
+    "keywords": "wrong number recharge incorrect mobile refund reverse cancel"
+  },
+  {
+    "id": "prepaid-recharge-history",
+    "category": "Prepaid",
+    "question": "Where can I check my prepaid recharge history?",
+    "answer": "Open the recharge or transaction history in your provider's official app or account website. Your payment service may also show the payment reference. Compare both records if a recharge is missing.",
+    "keywords": "prepaid recharge history transaction receipt records previous topup"
+  },
+  {
+    "id": "prepaid-balance",
+    "category": "Prepaid",
+    "question": "How can I check my prepaid balance?",
+    "answer": "Use the balance or account section of your provider's official app or website, or use a balance-check method published by your provider. The assistant cannot see your personal balance unless a secure account integration is connected.",
+    "keywords": "prepaid balance remaining account talktime check personal"
+  },
+  {
+    "id": "prepaid-data-pack",
+    "category": "Prepaid",
+    "question": "How can I buy a prepaid data add-on?",
+    "answer": "Check the data add-ons available for your number in the provider's official app or website and review their price, validity, eligibility, and whether an active base plan is required. Add-on availability and terms vary by provider.",
+    "keywords": "prepaid data add on booster pack extra data buy validity eligibility"
+  },
+  {
+    "id": "prepaid-validity-topup",
+    "category": "Prepaid",
+    "question": "Does adding prepaid balance extend my plan validity?",
+    "answer": "Not necessarily. Talk-time balance, a service-validity recharge, and a plan with bundled benefits can have different terms. Check the recharge description for validity and service conditions before purchasing.",
+    "keywords": "top up balance validity extend plan service validity talktime recharge"
+  },
+  {
+    "id": "prepaid-data-exhausted",
+    "category": "Prepaid",
+    "question": "What can I do when my prepaid data is used up?",
+    "answer": "Check your remaining allowance and plan terms in the provider app. Depending on the plan, data may stop, continue at a reduced speed, or require an add-on; check the exact terms before buying a pack.",
+    "keywords": "data used up exhausted prepaid limit slow speed add on pack"
+  },
+  {
+    "id": "prepaid-auto-recharge",
+    "category": "Prepaid",
+    "question": "How do I set up or cancel automatic prepaid recharge?",
+    "answer": "Manage recurring recharge in the provider app or the payment service where it was created. Check the scheduled amount, number, date, and cancellation confirmation. If you cannot find the setting, contact that service's official support.",
+    "keywords": "automatic recurring prepaid recharge set up cancel schedule"
+  },
+  {
+    "id": "prepaid-offer-eligibility",
+    "category": "Prepaid",
+    "question": "Why is a prepaid recharge offer unavailable for my number?",
+    "answer": "Offers can depend on the number, location, existing plan, or eligibility rules. Check the offer details while signed into your provider's official app. Only the provider can confirm eligibility for your account.",
+    "keywords": "recharge offer unavailable not eligible prepaid offer number"
+  },
+  {
+    "id": "prepaid-plan-renewal",
+    "category": "Prepaid",
+    "question": "How can I check when my prepaid plan renews or expires?",
+    "answer": "Check your active plan and validity dates in your provider's official app or recharge confirmation. Renewal behavior and what happens after expiry depend on the plan's terms.",
+    "keywords": "prepaid renewal expiry expiry date plan validity active pack"
+  },
+  {
+    "id": "prepaid-recharge-number-check",
+    "category": "Prepaid",
+    "question": "What should I check before completing a prepaid recharge?",
+    "answer": "Confirm the mobile number, provider, recharge amount or plan, included benefits, validity, and any eligibility conditions shown in the official payment flow before confirming.",
+    "keywords": "before recharge confirm number provider amount plan benefits validity"
+  },
+  {
+    "id": "network-outage",
+    "category": "Network",
+    "question": "How can I find out if there is a network outage in my area?",
+    "answer": "Check your provider's official outage or service-status page and support channels for your location. A coverage map is not a live outage report. This assistant cannot verify a current outage unless a live network-status integration is connected.",
+    "keywords": "network outage service down current status area local live"
+  },
+  {
+    "id": "no-signal",
+    "category": "Network",
+    "question": "My phone has no signal. What should I try?",
+    "answer": "Check that airplane mode is off, move to a different location, and restart the phone. If appropriate, re-seat the SIM or check whether the provider reports an outage. If the problem continues in multiple locations, contact support to check the SIM, device, and account.",
+    "keywords": "no signal no service bars disconnected SIM troubleshooting"
+  },
+  {
+    "id": "indoor-signal",
+    "category": "Network",
+    "question": "Why is mobile signal weak indoors?",
+    "answer": "Building materials, room location, terrain, and distance from network equipment can affect indoor reception. Try a different part of the building or an outdoor location and compare. A coverage map is an estimate and cannot guarantee indoor signal.",
+    "keywords": "weak indoor signal reception building walls coverage"
+  },
+  {
+    "id": "dropped-calls",
+    "category": "Network",
+    "question": "My calls keep dropping. What can I do?",
+    "answer": "Check whether calls drop in one location or everywhere, restart your phone, and confirm that your SIM and account are active. If possible, test in another location. Report the affected locations and times to your provider so it can investigate network or account issues.",
+    "keywords": "dropped calls disconnect call keeps falling signal voice issue"
+  },
+  {
+    "id": "cannot-make-calls",
+    "category": "Network",
+    "question": "I cannot make or receive calls. How can I troubleshoot it?",
+    "answer": "Check signal, airplane mode, call settings, SIM seating, and whether the account or plan is active. Restart the device and test in another location. If the issue persists, contact the provider to check for account restrictions, SIM faults, or a local service issue.",
+    "keywords": "cannot make receive calls outgoing incoming call failure network"
+  },
+  {
+    "id": "sms-not-sending",
+    "category": "Network",
+    "question": "My text messages are not sending. What should I check?",
+    "answer": "Check signal and the recipient number, restart the phone, and confirm that your plan or balance supports messaging. If messages still fail, contact your provider through an official channel; message settings and service availability vary by device and provider.",
+    "keywords": "SMS text message not sending failing unable send receive"
+  },
+  {
+    "id": "mobile-data-not-working",
+    "category": "Network",
+    "question": "Mobile data is not working. What should I check?",
+    "answer": "Confirm mobile data is enabled, airplane mode is off, and your plan has an active data allowance. Restart the phone or briefly toggle airplane mode, then check for a local service issue. Avoid changing advanced network settings unless your provider gives the correct settings for your device.",
+    "keywords": "mobile data not working internet no connection settings APN"
+  },
+  {
+    "id": "network-restart",
+    "category": "Network",
+    "question": "Will restarting my phone or toggling airplane mode help network problems?",
+    "answer": "A restart or briefly switching airplane mode on and off can make the phone reconnect to the network. It is a basic troubleshooting step, not a fix for an outage, damaged SIM, device fault, or account issue.",
+    "keywords": "restart phone toggle airplane mode reconnect network troubleshooting"
+  },
+  {
+    "id": "network-congestion",
+    "category": "Network",
+    "question": "Why does my connection slow down at busy times?",
+    "answer": "Network performance can vary with local congestion, signal conditions, device capability, and plan terms. Compare performance at different locations and times, and check your plan's fair-use or speed terms in the provider app. Contact support if the change is persistent.",
+    "keywords": "slow speed busy time congestion network peak hours performance"
+  },
+  {
+    "id": "5g-availability",
+    "category": "Network",
+    "question": "Why am I not getting 5G on my phone?",
+    "answer": "5G availability depends on coverage at your exact location, a compatible device and SIM, enabled network settings, and provider plan or account eligibility. Check the provider's official coverage and device guidance; 5G cannot be guaranteed indoors or at every location.",
+    "keywords": "5G not available phone compatibility coverage device SIM plan"
+  },
+  {
+    "id": "network-coverage-map-limitations",
+    "category": "Network",
+    "question": "Can a coverage map guarantee signal at my exact address?",
+    "answer": "No. Coverage maps are estimates. Indoor construction, terrain, device capability, network load, and local conditions can change actual reception. Check the provider's map and test service at the location if possible.",
+    "keywords": "coverage map guarantee exact address signal estimate limitations"
+  },
+  {
+    "id": "network-location-report",
+    "category": "Network",
+    "question": "What information should I provide when reporting a network problem?",
+    "answer": "Share the affected area or nearby landmark, approximate times, whether calls, texts, or data are affected, and whether the issue happens indoors or outdoors. Do not post private account details publicly. Use your provider's official support channel for an account-specific investigation.",
+    "keywords": "report network problem complaint location time outage symptoms"
+  },
+  {
+    "id": "network-sim-reseat",
+    "category": "Network",
+    "question": "Can I remove and reinsert my SIM to troubleshoot signal?",
+    "answer": "If your device uses a removable SIM, power it down first if the device maker recommends that, then make sure the SIM is correctly seated and the tray is closed. Do not force the tray. For eSIMs or persistent problems, follow your device or provider's official instructions.",
+    "keywords": "remove reinsert reseat physical SIM signal troubleshoot eSIM"
+  }
+]
