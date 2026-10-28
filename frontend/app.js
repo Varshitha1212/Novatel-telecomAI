@@ -1,5 +1,5 @@
 import { Room, RoomEvent, Track, createLocalAudioTrack } from "https://esm.sh/livekit-client@2";
-
+const API_BASE_URL = "https://novatel-telecomai-qtmt.onrender.com";
 const conversation = document.querySelector("#conversation");
 const form = document.querySelector("#chat-form");
 const questionInput = document.querySelector("#question");
@@ -173,7 +173,7 @@ async function askQuestion(value) {
   questionInput.value = "";
 
   try {
-    const response = await fetch("/api/chat", {
+    const response = await fetch(`${API_BASE_URL}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question }),
@@ -304,7 +304,7 @@ async function startDictation() {
     voiceStatus.textContent = "Transcribing your message…";
     dictationButton.disabled = true;
     try {
-      const response = await fetch("/api/transcribe", {
+      const response = await fetch(`${API_BASE_URL}/api/transcribe`, {
         method: "POST",
         headers: { "Content-Type": audio.type.split(";", 1)[0] || "audio/webm" },
         body: audio,
@@ -362,7 +362,7 @@ voiceButton.addEventListener("click", async () => {
   setCallActivity("Connecting to voice support…");
   startCallVisual(currentAttempt);
   try {
-    const response = await fetch("/api/livekit/token", { method: "POST" });
+   const response = await fetch(`${API_BASE_URL}/api/livekit/token`, { method: "POST" });
     const result = await responseJson(response);
     if (!response.ok) throw new Error(result.detail || "Voice support is unavailable.");
     if (currentAttempt !== callAttempt) return;
@@ -422,7 +422,7 @@ window.addEventListener("pagehide", () => {
   if ("speechSynthesis" in window) speechSynthesis.cancel();
 });
 
-fetch("/api/config")
+fetch(`${API_BASE_URL}/api/config`)
   .then((response) => response.json())
   .then(({ chat_enabled: chatIsEnabled, voice_enabled: voiceEnabled, dictation_enabled: dictationEnabled, support_contact: supportContact }) => {
     const supportLink = document.querySelector("#support-contact");

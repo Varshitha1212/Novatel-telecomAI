@@ -7,7 +7,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import httpx
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.staticfiles import StaticFiles
+from fastapi.staticfiles import StaticFiles 
+from fastapi.middleware.cors import CORSMiddleware
 from livekit import api
 from pydantic import BaseModel, Field
 
@@ -21,6 +22,15 @@ from app.vector_store import ensure_knowledge_base_ingested
 load_dotenv()
 
 app = FastAPI(title="Telecom Support Chat")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://novatel-telecom-ai.vercel.app",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
+)
 FRONTEND_PATH = Path(__file__).resolve().parent.parent / "frontend"
 logger = logging.getLogger(__name__)
 MAX_AUDIO_BYTES = 25 * 1024 * 1024
