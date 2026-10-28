@@ -24,12 +24,13 @@ load_dotenv()
 app = FastAPI(title="Telecom Support Chat")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://novatel-telecom-ai.vercel.app",
-    ],
+   allow_origins=[
+    "https://novatel-telecom-ai.vercel.app",
+    "https://novatel-telecom-pwuvmv9tz-varshitha-3a8a.vercel.app",
+],
     allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 FRONTEND_PATH = Path(__file__).resolve().parent.parent / "frontend"
 logger = logging.getLogger(__name__)
