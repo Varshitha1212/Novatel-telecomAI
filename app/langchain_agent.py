@@ -294,7 +294,7 @@ def _create_agent() -> Any:
         api_key = openai_api_key
         base_url = os.getenv("OPENAI_BASE_URL") or None
     elif groq_api_key:
-        model_name = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+        model_name = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
         api_key = groq_api_key
         base_url = os.getenv(
             "GROQ_BASE_URL",

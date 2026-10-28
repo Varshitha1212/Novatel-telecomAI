@@ -21,7 +21,7 @@ services:
       - key: LIVEKIT_API_SECRET
         sync: false
       - key: GROQ_MODEL
-        value: llama-3.3-70b-versatile
+        value: openai/gpt-oss-120b
       - key: GROQ_BASE_URL
         value: https://api.groq.com/openai/v1
       - key: QDRANT_COLLECTION
